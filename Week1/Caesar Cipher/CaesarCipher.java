@@ -1,17 +1,16 @@
 
 /**
  * Write a description of CaesarCipher here.
- * 
+ * Create a new class called CaesarCipher.
+ *
  * @author (Aymar N.) 
- * @version (a version number or a date)
+ * @version (25.02.19)
  */
 import edu.duke.*;
 
 
-
 /* 
-Specifically, you should do the following: 
-Create a new class called CaesarCipher.
+
 Write the method encrypt that has two parameters, a String named input and 
 an int named key. This method returns a String that has been encrypted using
 the Caesar Cipher algorithm explained in the videos. Assume that all the
