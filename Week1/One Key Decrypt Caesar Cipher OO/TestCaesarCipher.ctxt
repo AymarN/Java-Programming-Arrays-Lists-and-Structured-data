@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=TestCaesarCipher
+comment1.params=
+comment1.target=void\ simpleTests()
+comment1.text=\n\ Write\ the\ void\ method\ simpleTests\ that\ has\ no\ parameters.This\ method\ should\n\ read\ in\ a\ file\ as\ a\ string,\ create\ a\ CaesarCipher\ object\ with\ key\ 18,\ \n\ encrypt\ the\ String\ read\ in\ using\ the\ CaesarCipher\ object,\ print\ the\ encrypted\n\ String,\ and\ decrypt\ the\ encrypted\ String\ using\ the\ decrypt\ method\n
+comment2.params=input
+comment2.target=java.lang.String\ breakCaesarCipher(java.lang.String)
+comment2.text=\n\ Write\ the\ method\ breakCaesarCipher\ that\ has\ one\ String\ parameter\ named\ input.\n\ This\ method\ should\ figure\ out\ which\ key\ was\ used\ to\ encrypt\ this\ message\n\ then\ create\ a\ CaesarCipher\ object\ with\ that\ key\ and\ decrypt\ the\ message\n\ In\ the\ simpleTests\ method,\ add\ a\ call\ to\ breakCaesarCipher\ on\ the\ encrypted\n\ String\ to\ decrypt\ it\ automatically\ by\ determining\ the\ Key,\ and\ print\ the\ \n\ decrypted\ String.\n
+comment3.params=values
+comment3.target=int\ maxIndex(int[])
+comment4.params=message
+comment4.target=int[]\ countLetters(java.lang.String)
+numComments=5
