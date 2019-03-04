@@ -1,0 +1,118 @@
+Breaking the Caesar Cipher
+Quiz pour s'exercer, 11 questions
+Question 11
+
+1. Question 1
+Which two of the following check correctly if the last character of the String word is not a letter?
+
+if ( ! Character.isLetter(word.charAt(word.length()-1))){      
+    wordlength--;         
+}
+
+if (Character.isLetter(word.charAt(word.length()-1)) == false) {
+    wordlength--;
+}
+
+
+
+2. Question 2
+Consider the following code which is in a program that counts the words of different lengths from a file, and assume resource is a FileResource to a file of words and counts is an array of integer counters.
+
+for(String word : resource.words()){    
+     int wordlength = word.length();      
+     if (wordlength >= counts.length) {            
+          wordlength = counts.length - 1;       
+     }    
+     if (wordlength > 0 ) {          
+          counts[wordlength] ++;        
+     }
+}
+
+Which one of the following best describes the purpose of the first if statement?
+
+All words that are of length greater than or equal to the size of the counts array are counted in the last counter in the array.
+
+
+3. Question 3
+Which one of the following words (or rather groups of characters with no blanks) might need a special case in the countWordLengths method?
+
+$
+
+4. Question 4
+Consider the file romeo.txt.
+
+What is the most common word length (ignoring the punctuation of the first and last character of each group of characters)?
+4
+
+5. Question 5
+Consider the file lotsOfWords.txt.
+
+What is the most common word length (ignoring the punctuation of the first and last character of each group of characters)?
+
+8
+
+
+6. Question 6
+Consider the following code for the halfOfString method that is given a string named message and a starting position named start, and returns a new string that is formed from every other character starting with the given start location.
+
+String answer = "";     
+// MISSING CODE     
+return answer;
+Which one of the following is the missing code for this method?
+
+for (int k = start; k< message.length() ; k+= 2) {
+     answer = answer + message.charAt(k);     
+}
+
+7. Question 7
+Suppose we decided to write an eyeball method for the two-key decrypt algorithm.
+
+We would need to decrypt with all possible key combinations resulting in 26*26 = 676 possible combinations to look at.
+
+8. Question 8
+
+The following phrase was encrypted with the two key encryption method we discussed using the two keys 2 and 20.
+
+Top ncmy qkff vi vguv vbg ycpx
+
+[[NEED THE ANSWER]]
+
+What is the decrypted message?
+
+(Note: You should preserve the spacing in your answer.)
+
+
+9. Question 9
+The following phrase was encrypted with the two key encryption method discussed in the programming exercise, using two unknown keys.
+
+Akag tjw Xibhr awoa aoee xakex znxag xwko
+
+What is the decrypted message?
+
+Eren and Emily have evil eerie green ears
+
+(You’ll need to figure out which keys were used to encrypt it.)
+
+10. Question 10
+
+Decrypt the encrypted file mysteryTwoKeysPractice.txt
+
+This file is encrypted with the two key encryption method we discussed. You will need to decrypt the complete file by figuring out which keys were used to encrypt it.
+
+What are the first five decrypted words?
+
+Geometric computing research at Duke
+
+11. Question 11
+Decrypt the encrypted file mysteryTwoKeysPractice.txt
+
+This file is encrypted with the two key encryption method we discussed. You’ll need to decrypt the complete file by figuring out which keys were used to encrypt it.
+
+What are the two keys (in order) that were used to encrypt it?
+
+17,4
+
+
+Submit Quiz
+
+

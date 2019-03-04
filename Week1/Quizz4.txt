@@ -1,0 +1,206 @@
+Cryptography
+Quiz, 14 questions
+
+1. Question 1
+
+Encrypt the following phrase with the Caesar Cipher algorithm, using key 15.
+
+Can you imagine life WITHOUT the internet AND computers in your pocket?
+
+What is the encrypted string?
+
+Rpc ndj xbpvxct axut LXIWDJI iwt xcitgcti PCS rdbejitgh xc ndjg edrzti? 
+
+
+2. Question 2
+Encrypt the following phrase with the algorithm described for using two Caesar Cipher keys, with key1 = 21 and key2 = 8.
+
+Can you imagine life WITHOUT the internet AND computers in your pocket?
+
+What is the encrypted string?
+
+Xai twp duaodvz gqam EDBCWPB bcm qibzzimo AVY xwhxpbzzn dv gjcm kwxszb?
+
+3. Question 3
+Consider the Caesar Cipher two-key algorithm described in this course. Every other character, starting with the first, will use the Caesar Cipher algorithm with key1, and every other character, starting with the second, will use the Caesar Cipher algorithm with key2.
+
+Assume shiftedAlphabet1 is the shifted alphabet using key1 and shiftedAlphabet2 is the shifted alphabet using key2, both are of type String.
+
+If i is the location of the current character in the message, and idx is the integer variable of the location of the current character in the original alphabet, which one of the following segments of code correctly gets the corresponding encrypted character?
+
+if (i % 2 == 0)  {                  
+     newChar = shiftedAlphabet1.charAt(idx);            
+}            
+else {                  
+     newChar = shiftedAlphabet2.charAt(idx);            
+}
+
+
+4. Question 4
+Consider the file errors.txt.
+
+What is the most common word length (ignoring the punctuation of the first and last character of each group of characters)?
+
+4
+
+
+5. Question 5
+Consider the file manywords.txt.
+
+What is the most common word length (ignoring the punctuation of the first and last character of each group of characters)?
+
+7
+
+6. Question 6
+The following phrase was encrypted with the two-key encryption method we discussed using the two keys 14 and 24. What is the decrypted message?
+
+Hfs cpwewloj loks cd Hoto kyg Cyy.
+
+[[NEED THE ANSWER]]
+
+7. Question 7
+The following phrase was encrypted with the two-key encryption method described in this course. You will need to figure out which keys were used to encrypt it.
+
+Aal uttx hm aal Qtct Fhljha pl Wbdl. Pvxvxlx!
+
+What is the original message?
+
+The name of the Java Mascot is Duke. Woeoeee!
+
+
+8. Question 8
+Decrypt the encrypted file mysteryTwoKeysQuiz.txt.
+
+This file is encrypted with the two-key encryption method we discussed. You’ll need to decrypt the complete file by figuring out which keys were used to decrypt it.
+
+What are the first five decrypted words?
+
+(Note: Spacing and punctuation should be preserved in your answer.)
+
+Duke Computer Science Department Overview
+
+
+9. Question 9
+Decrypt the encrypted file mysteryTwoKeysQuiz.txt.
+
+This file is encrypted with the two-key encryption method we discussed. You’ll need to decrypt the complete file by figuring out which keys were used to decrypt it.
+
+What are the two keys used to encrypt it?
+
+Note: Enter your answer as firstkey,secondkey with no spaces, for example:
+
+17,4
+
+10. Question 10
+Which of the following is the best choice for adding additional private fields to the CaesarCipherTwo class created in the last lesson to make it easier to call decrypt on a string that was encrypted using an object of this class?
+
+As key1 and key2 of type int, which are parameters to the constructor.
+
+11. Question 11
+
+Should the halfOfString method in the TestCaesarCipherTwo class be public or private?
+
+private
+
+12. Question 12
+Consider the following two classes Simple and TestSimple for the remaining questions.
+
+public class Simple{ 
+     private String word; 
+     private String phrase; 
+     public Simple(int number, String w) {  
+          word = w;   
+          phrase = mystery(number, w);          
+     }   
+     private String mystery(int num, String s) {    
+          String answer = "";   
+          for (int k=0; k<num; k++) {       
+               answer = answer + s;   
+          }   
+          return answer; 
+     } 
+     public String toString() {   
+          return phrase + " is " + word + " repeated";
+     }
+}
+
+
+public class TestSimple{
+     public void print() {    
+          Simple item = new Simple(3, "blue");      
+          System.out.println(item);             
+     }      
+}
+Why is there no return type for the method Simple?
+
+It should not have a return type.
+
+13. Question 13
+
+public class Simple{ 
+     private String word; 
+     private String phrase; 
+     public Simple(int number, String w) {  
+          word = w;   
+          phrase = mystery(number, w);          
+     }   
+     private String mystery(int num, String s) {    
+          String answer = "";   
+          for (int k=0; k<num; k++) {       
+               answer = answer + s;   
+          }   
+          return answer; 
+     } 
+     public String toString() {   
+          return phrase + " is " + word + " repeated";
+     }
+}
+
+public class TestSimple{
+     public void print() {    
+          Simple item = new Simple(3, "blue");      
+          System.out.println(item);             
+     }      
+}
+
+What is printed when the print method in TestSimple is called?
+
+blueblueblue is blue repeated
+
+
+14. Question 14
+
+public class Simple{ 
+     private String word; 
+     private String phrase; 
+     public Simple(int number, String w) {  
+          word = w;   
+          phrase = mystery(number, w);          
+     }   
+     private String mystery(int num, String s) {    
+          String answer = "";   
+          for (int k=0; k<num; k++) {       
+               answer = answer + s;   
+          }   
+          return answer; 
+     } 
+     public String toString() {   
+          return phrase + " is " + word + " repeated";
+     }
+}
+
+public class TestSimple{
+     public void print() {    
+          Simple item = new Simple(3, "blue");      
+          System.out.println(item);             
+     }      
+}
+Suppose the following line is added as the last line in the print method of the class TestSimple.
+
+System.out.println(item.mystery(5, "ho"));
+How does this line affect what happens with the code in the print method?
+
+
+A compile error occurs when compiling this class, because mystery is private and cannot be called by the TestSimple class.
+
+
