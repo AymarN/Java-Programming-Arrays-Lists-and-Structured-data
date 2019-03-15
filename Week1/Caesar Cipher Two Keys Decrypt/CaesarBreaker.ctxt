@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=CaesarBreaker
+comment1.params=message
+comment1.target=int[]\ CountLetters(java.lang.String)
+comment1.text=\n\ Complete\ the\ decryption\ method\ shown\ in\ the\ lesson\ by\ creating\ a\n\ CaesarBreaker\ class\ with\ the\ methods\ countLetters,\ maxIndex\ and\ \n\ decrypt.\n
+comment2.params=values
+comment2.target=int\ maxIndex(int[])
+comment3.params=encrypted\ Key
+comment3.target=java.lang.String\ decrypt(java.lang.String,\ int)
+comment4.params=encrypted
+comment4.target=java.lang.String\ decryptTwoKeys(java.lang.String)
+comment4.text=\n\ Write\ the\ method\ decryptTwoKeys\ in\ the\ CaesarBreaker\ class\ that\ has\n\ one\ parameter,\ a\ String\ parameter\ named\ encrypted\ that\ represents\ a\ \n\ String\ that\ was\ encrypted\ with\ the\ two\ keys\ algorithm\ discussed.\n
+comment5.params=message\ start
+comment5.target=java.lang.String\ halfOfString(java.lang.String,\ int)
+comment5.text=\n\ Write\ the\ method\ halOfString\ in\ the\ CaesarBreaker\ class\ that\ has\ \n\ two\ parameters,\ a\ String\ parameter\ named\ message\ and\ an\ int\ parameter\n\ named\ start.\ This\ method\ should\ return\ a\ new\ String\ that\ is\ every\ other\n\ character\ from\ message\ starting\ with\ the\ start\ position.\ For\ instance,\n\ the\ call\ halfOfString("Qbkm\ Zgis",0)\ returns\ the\ String\ "Qk\ gs"\ and\ the\ \n\ call\ halfOfString("Qbkm\ Zgis",1)\ returns\ the\ String\ "bmZi".\n\ Be\ sure\ to\ test\ this\ method\ with\ a\ small\ example.\n
+comment6.params=s
+comment6.target=int\ getKey(java.lang.String)
+comment6.text=\n\ Write\ the\ method\ getKey\ in\ the\ CaesarBreaker\ class\ that\ has\ one\ parameter,\n\ a\ string\ s.\ This\ method\ should\ call\ countLetters\ to\ get\ an\ array\ of\ the\ \n\ letter\ frequencies\ in\ String\ s\ and\ then\ use\ maxIndex\ to\ calculate\ the\ \n\ index\ of\ the\ largest\ letter\ frequency,\ which\ is\ the\ location\ \n\ of\ the\ encrypted\ letter\ 'e',\ which\ leads\ to\ the\ key,\ which\ is\ returned.\n
+comment7.params=
+comment7.target=void\ halfOfStringTest()
+comment8.params=
+comment8.target=void\ testDecrypt()
+comment8.text=\n\ Write\ a\ testDecrypt\ method\ in\ the\ CaesarBreaker\ class\ that\ prints\ the\n\ decrypted\ message,\ and\ make\ sure\ it\ works\ for\ encrypted\ messages\n\ that\ were\ encrypted\ with\ one\ key.\n
+comment9.params=
+comment9.target=void\ decryptTwoKeysTest()
+numComments=10
