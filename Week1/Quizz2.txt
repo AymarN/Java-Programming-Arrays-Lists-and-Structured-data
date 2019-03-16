@@ -75,7 +75,6 @@ The following phrase was encrypted with the two key encryption method we discuss
 
 Top ncmy qkff vi vguv vbg ycpx
 
-[[NEED THE ANSWER]]
 
 What is the decrypted message?
 
@@ -113,6 +112,5 @@ What are the two keys (in order) that were used to encrypt it?
 17,4
 
 
-Submit Quiz
 
 
