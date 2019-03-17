@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=CaesarCipherTwo
+comment1.params=key1\ key2
+comment1.target=CaesarCipherTwo(int,\ int)
+comment2.params=input
+comment2.target=java.lang.String\ encrypt(java.lang.String)
+comment2.text=\n\ Write\ an\ encrypt\ method\ that\ has\ one\ String\ parameter\ named\ input.\n\ This\ method\ returns\ a\ String\ that\ is\ the\ input\ encrypted\ using\ the\ two\n\ shifted\ alphabets.\n
+comment3.params=encrypted
+comment3.target=java.lang.String\ decrypt(java.lang.String)
+comment3.text=\n\ Write\ a\ decrypt\ method\ that\ has\ one\ String\ parameter\ named\ input.\n\ This\ method\ returns\ a\ String\ that\ is\ the\ encrypted\ String\ decrypted\n\ using\ the\ key1\ and\ the\ key2\ associated\ with\ this\ CaesarCipherTwo\ object.\n
+numComments=4
