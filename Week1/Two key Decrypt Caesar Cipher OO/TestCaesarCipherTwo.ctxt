@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=TestCaesarCipherTwo
+comment1.params=
+comment1.target=void\ simpleTests()
+comment1.text=\n\ Write\ the\ void\ method\ simpleTests\ that\ has\ no\ parameters.This\ method\n\ should\ read\ in\ a\ file\ as\ a\ String,\ create\ a\ CaeasarCipherTwo\ object\ with\n\ keys\ 17\ and\ 3,\ encrypt\ the\ String\ using\ the\ CaesarCipherTwo\ object,\ print\n\ the\ encrypted\ String,\ and\ decrypt\ the\ encrypted\ String\ using\ the\ decrypt\n\ method\n
+comment2.params=my_message\ start
+comment2.target=java.lang.String\ halfOfString(java.lang.String,\ int)
+comment3.params=message
+comment3.target=int[]\ countLetters(java.lang.String)
+comment4.params=s
+comment4.target=int\ getKey(java.lang.String)
+comment5.params=values
+comment5.target=int\ maxIndex(int[])
+comment6.params=input
+comment6.target=java.lang.String\ breakCaesarCipher(java.lang.String)
+comment6.text=\n\ Write\ the\ method\ breakCaesarCipher\ that\ has\ one\ String\ parameter\ named\ \n\ input.This\ method\ should\ figure\ out\ which\ keys\ were\ used\ to\ encrypt\ this\n\ message\ then\ create\ a\ CaesarCipherTwo\ object\ with\ that\ key\ and\ decrypt\n\ the\ message.In\ the\ simpleTests\ method,\ add\ a\ call\ to\ breakCaesarCipher\ on\n\ the\ encrypted\ String\ to\ decrypt\ it\ automatically\ by\ determining\ the\ keys,\n\ and\ then\ print\ the\ decrypted\ String.\n
+numComments=7
