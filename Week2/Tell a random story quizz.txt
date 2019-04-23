@@ -1,0 +1,44 @@
+
+Telling a Random Story
+Quiz pour s'exercer, 6 questions
+
+
+1. Question 1
+How many unique words are in the file likeit.txt?
+
+You should lowercase all words and include the punctuation as part of a word. Thus, “end.” is different than “end”, but “All” is the same as “all”.
+For each new query in this quiz, make sure to create a new object, so each count will start from zero.
+
+4932
+
+
+2. Question 2
+Which word occurs the most often in the file likeit.txt?
+
+You should lowercase all words and include the punctuation as part of a word. Thus, “end.” is different than “end”, but “All” is the same as “all”.
+
+The
+
+3. Question 3
+Find the word that occurs the most often in the file likeit.txt.
+
+You should lowercase all words and include the punctuation as part of a word. Thus, “end.” is different than “end”, but “All” is the same as “all”.
+How many times does it occur?
+
+692
+
+4. Question 4
+What is the name of the character with the most speaking parts in the file likeit.txt?
+ROSALIND
+
+5. Question 5
+Find the name of the character with the most speaking parts in the file likeit.txt.
+How many speaking parts does this person have?
+200
+
+6. Question 6
+Name one of the five characters in the file likeit.txt who has at least 10 speaking lines, but no more than 15 lines:
+
+WILLIAM
+
+
