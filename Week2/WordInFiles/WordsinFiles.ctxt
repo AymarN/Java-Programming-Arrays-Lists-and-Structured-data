@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=WordsinFiles
+comment1.params=
+comment1.target=WordsinFiles()
+comment2.params=f
+comment2.target=void\ addWordsFromFile(java.io.File)
+comment2.text=\n\ Write\ a\ private\ void\ method\ named\ addWordsFromFile\ that\ has\ one\n\ parameter\ f\ of\ type\ File.This\ method\ should\ add\ all\ the\ words\ from\n\ f\ into\ the\ map.If\ a\ word\ is\ not\ in\ the\ map,\ then\ you\ must\ create\n\ a\ new\ ArrayList\ of\ type\ String\ with\ this\ word,\ and\ have\ the\ word\ map\n\ to\ this\ ArrayList.If\ a\ word\ is\ already\ in\ the\ map,\ then\ add\ the\ current\n\ filename\ to\ its\ ArrayList,\ unless\ the\ filename\ is\ already\ in\ the\ \n\ ArrayList.\ You\ can\ use\ the\ File\ method\ getName\ to\ get\ the\ filename\ of\ \n\ a\ file\n
+comment3.params=
+comment3.target=void\ buildWordFileMap()
+comment3.text=\n\ Write\ a\ void\ method\ named\ buildWordFileMap\ that\ has\ no\ parameters.\n\ This\ method\ first\ clears\ the\ map,\ and\ then\ uses\ a\ DirectoryResource\n\ to\ select\ a\ group\ of\ files.Foir\ each\ file,it\ puts\ all\ of\ its\ words\n\ the\ map\ by\ calling\ the\ method\ addWordsFromFile.\ The\ remaining\ methods\n\ to\ write\ all\ assume\ that\ the\ HashMap\ has\ been\ built.\n
+comment4.params=
+comment4.target=int\ maxNumber()
+comment4.text=\n\ Write\ the\ method\ maxNumber\ that\ has\ no\ parameters.This\ method\ returns\ \n\ the\ maximum\ number\ of\ files\ any\ word\ appears\ in,\ considering\ all\ words\n\ from\ a\ group\ of\ files.In\ the\ example\ above,\ there\ are\ four\ files\ \n\ considered.\ No\ word\ appears\ in\ all\ four\ files.Two\ words\ appear\ in\ three\n\ of\ the\ files,\ so\ maxNumber\ on\ those\ four\ files\ would\ return\ 3.\ \n\ This\ method\ assumes\ that\ the\ HashMap\ has\ already\ been\ constructed.\n
+comment5.params=number
+comment5.target=java.util.ArrayList\ wordsInNumFiles(int)
+comment5.text=\n\ Write\ the\ method\ WordInNumFiles\ that\ has\ one\ integer\ parameter\ \n\ called\ number.This\ method\ returns\ an\ ArrayList\ of\ words\ that\ appear\n\ in\ exactly\ number\ files.\ In\ the\ example,the\ call\ of\ wordsInNumFiles(3)\n\ would\ return\ an\ ArrayList\ with\ the\ words\ "cats"\ and\ "and",\ and\ the\ call\n\ wordsInNumFiles(2)\ wpuld\ return\ an\ ArrayList\ with\ the\ words\ "love",\n\ "are"\ and\ "dogs",\ all\ the\ words\ that\ appear\ in\ exactly\ two\ files\n
+comment6.params=word
+comment6.target=void\ printFilesIn(java.lang.String)
+comment6.text=\n\ Write\ the\ void\ method\ printFilesIn\ that\ has\ one\ String\ parameter\ named\n\ word.This\ method\ prints\ the\ names\ of\ the\ files\ this\ word\ appears\ in,one\n\ filename\ per\ line.\ For\ example,\ in\ the\ example\ above,\ the\ call\n\ printFilesIn("cats")\ would\ print\ the\ three\ filenames\:\ brief1.txt,\ \n\ brief3.txt\ and\ brief4.txt,\ each\ on\ a\ separate\ line.\n
+comment7.params=
+comment7.target=void\ test()
+numComments=8
