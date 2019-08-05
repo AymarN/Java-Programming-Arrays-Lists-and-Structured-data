@@ -1,0 +1,22 @@
+1. Question 1
+Which one of the following is the correct code for the constructor LogAnalyzer?
+
+records = new ArrayList<LogEntry>();
+
+2. Question 2
+Which one of the following is the best answer for the line in the method readFile that will use WebLogParser to parse a line from the file?
+
+Assume that line is a String representing one line from the file.
+
+LogEntry le = WebLogParser.parseEntry(line);
+
+3. Question 3
+Suppose a new integer variable named location will be added as a private variable to the LogEntry class. This variable should be initialized as 0 just once when the object is created.
+
+Where is the best location in the class to initialize this variable?
+
+Initialize location in the constructor with the code:
+
+location = 0;
+
+
