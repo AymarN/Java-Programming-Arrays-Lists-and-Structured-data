@@ -1,0 +1,27 @@
+
+1. Question 1
+Run the method mostNumberVisitsByIP after a HashMap has been created from the method countVisitsPerIP on the file weblog1_log.
+
+What number is returned?
+
+133
+
+2. Question 2
+Run the method iPsMostVisits after a HashMap has been created from the method countVisitsPerIP on the file weblog1_log.
+
+What single IP address is returned in the ArrayList?
+
+84.190.182.222
+
+3. Question 3
+Run the method dayWithMostIPVisits with a HashMap has been created from the method iPsForDays on the file weblog1_log.
+
+What day is returned?
+
+4. Question 4
+Run the method iPsWithMostVisitsOnDay with two parameters—one, a HashMap that has been created from the method iPsForDays on the file weblog1_log and two, the day “Mar 17”.
+
+One IP Address is returned in the ArrayList—what is it?
+
+200.129.163.70
+

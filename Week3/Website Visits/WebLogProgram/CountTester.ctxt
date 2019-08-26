@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=CountTester
+comment1.params=
+comment1.target=CountTester()
+comment2.params=
+comment2.target=java.util.HashMap\ testCounts()
+comment3.params=
+comment3.target=void\ testmostNumberVisitsByIP()
+comment4.params=
+comment4.target=void\ testiPsMostVisits()
+comment5.params=
+comment5.target=void\ testiPsForDays()
+comment6.params=
+comment6.target=void\ testdayWithMostIPVisits()
+comment7.params=
+comment7.target=void\ testiPsWithMostVisitsOnDay()
+numComments=8
