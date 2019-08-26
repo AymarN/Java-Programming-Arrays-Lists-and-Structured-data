@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=WebLogParser
+comment1.params=sb\ delim
+comment1.target=java.lang.String\ munchTo(java.lang.StringBuilder,\ java.lang.String)
+comment2.params=line
+comment2.target=LogEntry\ parseEntry(java.lang.String)
+comment3.params=dateStr
+comment3.target=java.util.Date\ parseDate(java.lang.String)
+numComments=4

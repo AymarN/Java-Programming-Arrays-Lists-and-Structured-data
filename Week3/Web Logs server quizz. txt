@@ -1,0 +1,137 @@
+
+1. Question 1
+Suppose a web log is modified to now have a sixth piece of information, a priority, that can be represented as a String.
+
+Which one of the following is the least likely change to the LogEntry class to accommodate this new part of a web log?
+
+A new String parameter is added to the constructor.
+
+A new private variable named priority is created.
+
+A new String field is initialized in the constructor.
+
+A new getPriority method is created to return the priority.
+
+The toString method is modified to include a String parameter.
+
+The toString method is modified to include the new priority as part of the return String.
+
+2. Question 2
+
+Consider the following code for the readFile method of the LogAnalyzer class.
+
+public void readFile(String filename) {
+    FileResource fr = new FileResource(filename);
+    for (String line : fr.lines()) {
+        LogEntry le = WebLogParser.parseEntry(line);
+    }
+}
+
+In the Tester class, readFile is called with a correct filename, and then printAll is called, but nothing is printed.
+
+Which one of the following is likely the best reason why?
+
+In readFile, the log entries were not stored in records.
+
+3. Question 3
+Consider the following code for the method printAllHigherThanNum with one integer parameter num. This method should print all the logs that have a status code higher than num.
+
+Which one of the following would be the best choice for suitable code for this method?
+
+
+for (LogEntry le : records) {
+    if (le.getStatusCode() > num) {
+        System.out.println(le);
+    }
+}
+
+
+if (le.getStatusCode() > num) {
+    for (LogEntry le : records) {
+        if (le.getStatusCode() > num) {
+            System.out.println(le);
+        }
+    }
+}
+
+
+for (LogEntry le : records) {
+    if (le.getStatusCode() > num) {
+        System.out.println(le);
+    }
+    else {
+        System.out.println();
+    }
+}
+
+
+if (le.getStatusCode() > num) {
+    for (LogEntry le : records) {
+        System.out.println(le);
+    }
+}
+
+
+if (le.getStatusCode() > num) {
+    for (LogEntry le : records) {
+        System.out.println(le);
+    }
+}
+else {
+    System.out.println();
+}
+
+4. Question 4
+Run the method countUniqueIPs on the file weblog2_log.
+
+How many unique IP addresses are in the file?
+
+45
+
+5. Question 5
+Run the method uniqueIPVisitsOnDay(“Sep 27”) on the file weblog2_log.
+What size is the ArrayList that is returned?
+
+8
+
+6. Question 6
+Run the method countUniqueIPsInRange(400,499) on the file weblog2_log.
+What number is returned?
+
+23
+
+7. Question 7
+Run the method mostNumberVisitsByIP after a HashMap has been created from the method countVisitsPerIP on the file weblog2_log.
+What number is returned?
+
+63
+
+8. Question 8
+Run the method iPsMostVisits after a HashMap has been created from the method countVisitsPerIP on the file weblog2_log.
+
+What single IP address is returned in the ArrayList?
+
+188.162.84.63
+
+9. Question 9
+Run the method dayWithMostIPVisits with a HashMap has been created from the method iPsForDays on the file weblog2_log.
+
+What day is returned?
+
+Sep 24
+
+Sep 26
+
+Sep 28
+
+Sep 30
+
+10. Question 10
+Run the method iPsWithMostVisitsOnDay with two parameters—one, a HashMap that has been created from the method iPsForDays on the file weblog2_log and two, the day “Sep 29”.
+One IP address is returned in the ArrayList—what is it?
+
+212.128.74.248
+
+
+
+
