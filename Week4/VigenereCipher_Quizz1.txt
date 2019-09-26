@@ -1,0 +1,18 @@
+
+
+1.Question 1
+
+Consider the algorithm discussed in this lesson for breaking the Vigenère cipher when the language and key length are known. Assume that the language is English, and the key length is 
+
+What is the key used to encrypt the file secretmessage1.txt?
+
+Enter your answer as integers separated with commas, for example:
+
+3,20,10,4
+2.Question 2
+
+Consider the algorithm discussed in this lesson for breaking the Vigenère cipher when the language and key length are known. Assume that the language is English, and the key length is 
+
+What is the first line of the file secretmessage1.txt?
+
+Enter BRUTUS and CASSIUS, and a throng of Citizens
