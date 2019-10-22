@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=VigenereCipherTest
+comment1.params=
+comment1.target=void\ testCaesarCipher()
+comment2.params=
+comment2.target=void\ testCaesarCracker()
+comment3.params=
+comment3.target=void\ TestVigenereCipher()
+comment4.params=
+comment4.target=void\ TestSliceString()
+comment5.params=
+comment5.target=void\ TestTryKeyLength()
+comment6.params=
+comment6.target=void\ TestCountWords()
+comment7.params=
+comment7.target=void\ VigenereBreakerTest()
+comment8.params=
+comment8.target=void\ BreakVigenereTest()
+numComments=9
