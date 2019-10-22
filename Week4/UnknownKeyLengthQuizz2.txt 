@@ -1,0 +1,25 @@
+Unknown Key Length
+1.Question 1
+Consider the Vigenère decryption algorithm discussed in this lesson where the key length is unknown.
+
+What is the key length used to encrypt the file secretmessage2.txt?
+57
+
+2.Question 2
+Consider the Vigenère decryption algorithm discussed in this lesson where the key length is unknown.
+
+Use this algorithm to decrypt the file secretmessage2.txt. How many valid words are in the decrypted String?
+31565
+
+3.Question 3
+Consider the Vigenère decryption algorithm discussed in this lesson where the key length is unknown.
+
+Use this algorithm to decrypt the file secretmessage2.txt. What is the first line of text?
+The Tragedy of Hamlet, Prince of Denmark
+
+4.Question 4
+Consider the Vigenère decryption algorithm discussed in this lesson where the key length is unknown.
+
+Use the method tryKeyLength with a key length of 38 and the encrypted message in the file secretmessage2.txt. How many valid words are in the "decrypted" String?
+4324
+
