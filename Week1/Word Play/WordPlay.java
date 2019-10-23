@@ -2,34 +2,37 @@
 /**
  * Write a description of WordPlay here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Aymar NAHUM) 
+ * @version (V2 24.10.2019)
  */
 public class WordPlay {
 
-    public boolean isVowel(char ch){
+    public boolean isVowel(char ch) {
      if (ch == 'a' || ch =='e' || ch =='i' || ch =='o'|| ch =='u' || ch == 'y')   
          return true; 
      else if (ch == 'A' || ch =='E' || ch =='I' || ch =='O'|| ch =='U' || ch =='Y')
          return true;
      else
          return false;
-            }
+
+    }
             
-    public boolean isVowelA(char ch){
+    public boolean isVowelA(char ch) {
      if (ch == 'a')   
          return true; 
      else if (ch == 'A')
          return true;
      else
          return false;
-            }
+
+    }
     
-    public String replaceVowels(String phrase, char ch){
+    public String replaceVowels(String phrase, char ch) {
+
         StringBuilder original = new StringBuilder(phrase);
         //String replace = phrase;
         //char [] char2 = phrase.toCharArray();
-        for (int i = 0; i < original.length();i++){
+        for (int i = 0; i < original.length();i++) {
             //char currChar = original.charAt(i);
             char currChar = original.charAt(i);
             //int idx = phrase.indexOf(currChar);
