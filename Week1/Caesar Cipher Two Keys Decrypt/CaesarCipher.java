@@ -23,32 +23,32 @@ public class CaesarCipher {
         String shiftedAlphabet = alphabet.substring(key)+ alphabet.substring(0,key);
         // Count from 0 to < length of encrypted,(call it i)
         for (int i = 0; i < encrypted.length();i++){
-        // Look at the ith character of encrypted ( call it currchar)
-        char currChar = encrypted.charAt(i);
-        if (Character.isLowerCase(currChar))
-        {
-        // Find the index of currChar in the alphabet (call it idx)
-            int idx = alphabet.indexOf(currChar);
-        // If currChar is in the alphabet
-        if (idx !=-1){
-            // Get the idxth character of shiftedAlphabet (newChar)
-            char newChar = shiftedAlphabet.charAt(idx);
-            // Replace the ith character of encrypted with newChar
-            encrypted.setCharAt(i,newChar);
-        }
+            // Look at the ith character of encrypted ( call it currchar)
+            char currChar = encrypted.charAt(i);
+            if (Character.isLowerCase(currChar))
+            {
+            // Find the index of currChar in the alphabet (call it idx)
+                int idx = alphabet.indexOf(currChar);
+            // If currChar is in the alphabet
+            if (idx !=-1) {
+                // Get the idxth character of shiftedAlphabet (newChar)
+                char newChar = shiftedAlphabet.charAt(idx);
+                // Replace the ith character of encrypted with newChar
+                encrypted.setCharAt(i,newChar);
+            }
         
         }
         
         else {
-         // Find the index of currChar in the alphabet (call it idx)
+            // Find the index of currChar in the alphabet (call it idx)
             int idx = Alphabet.indexOf(currChar);
-        // If currChar is in the alphabet
-        if (idx !=-1){
-            // Get the idxth character of shiftedAlphabet (newChar)
-            char newChar = ShiftedAlphabet.charAt(idx);
-            // Replace the ith character of encrypted with newChar
-            encrypted.setCharAt(i,newChar);
-        }
+            // If currChar is in the alphabet
+            if (idx !=-1) {
+                // Get the idxth character of shiftedAlphabet (newChar)
+                char newChar = ShiftedAlphabet.charAt(idx);
+                // Replace the ith character of encrypted with newChar
+                encrypted.setCharAt(i,newChar);
+            }
             
         }
         
@@ -60,8 +60,7 @@ public class CaesarCipher {
    }
    
    
-    public String encryptTwoKeys(String input, int key1, int key2)
-    {
+    public String encryptTwoKeys(String input, int key1, int key2) {
         // Make a StringBuilder with message (encrypted)
         StringBuilder encrypted = new StringBuilder (input);
         // Write down the alphabet 
@@ -80,31 +79,27 @@ public class CaesarCipher {
         // Look at the ith character of encrypted ( call it currchar)
         char currChar = encrypted.charAt(i);
         
-        if ((i %2 == 0) && (Character.isLowerCase(currChar)))
-        {
-        // Find the index of currChar in the alphabet (call it idx)
-            int idx = alphabet.indexOf(currChar);
-        // If currChar is in the alphabet
-        if (idx!= 0)
-            {
-            // Get the idxth character of shiftedAlphabet (newChar)
-            char newChar = shiftedAlphabet1.charAt(idx);
-            // Replace the ith character of encrypted with newChar
-            encrypted.setCharAt(i,newChar);
+            if ((i %2 == 0) && (Character.isLowerCase(currChar))) {
+            // Find the index of currChar in the alphabet (call it idx)
+                int idx = alphabet.indexOf(currChar);
+            // If currChar is in the alphabet
+            if (idx!= 0) {
+                // Get the idxth character of shiftedAlphabet (newChar)
+                char newChar = shiftedAlphabet1.charAt(idx);
+                // Replace the ith character of encrypted with newChar
+                encrypted.setCharAt(i,newChar);
             }
         }
         
-        else if ((i %2 == 0) && (Character.isUpperCase(currChar)))
-        {
-        // Find the index of currChar in the alphabet (call it idx)
-            int idx = Alphabet.indexOf(currChar);
-        // If currChar is in the alphabet
-        if (idx != 0)
-            {
-            // Get the idxth character of shiftedAlphabet (newChar)
-            char newChar = ShiftedAlphabet1.charAt(idx);
-            // Replace the ith character of encrypted with newChar
-            encrypted.setCharAt(i,newChar);
+            else if ((i %2 == 0) && (Character.isUpperCase(currChar))) {
+                // Find the index of currChar in the alphabet (call it idx)
+                int idx = Alphabet.indexOf(currChar);
+                // If currChar is in the alphabet
+            if (idx != 0) {
+                // Get the idxth character of shiftedAlphabet (newChar)
+                char newChar = ShiftedAlphabet1.charAt(idx);
+                // Replace the ith character of encrypted with newChar
+                encrypted.setCharAt(i,newChar);
             }
         }
         
@@ -114,32 +109,28 @@ public class CaesarCipher {
         // Look at the ith character of encrypted ( call it currchar)
         char currChar = encrypted.charAt(i);
         
-        if ((i %2 != 0) && (Character.isLowerCase(currChar)))
-        {
-        // Find the index of currChar in the alphabet (call it idx)
-            int idx = alphabet.indexOf(currChar);
-        // If currChar is in the alphabet
-        if (idx != 0)
+            if ((i %2 != 0) && (Character.isLowerCase(currChar)))
             {
-            // Get the idxth character of shiftedAlphabet (newChar)
-            char newChar = shiftedAlphabet2.charAt(idx);
-            // Replace the ith character of encrypted with newChar
-            encrypted.setCharAt(i,newChar);
+            // Find the index of currChar in the alphabet (call it idx)
+                int idx = alphabet.indexOf(currChar);
+            // If currChar is in the alphabet
+            if (idx != 0) {
+                // Get the idxth character of shiftedAlphabet (newChar)
+                char newChar = shiftedAlphabet2.charAt(idx);
+                // Replace the ith character of encrypted with newChar
+                encrypted.setCharAt(i,newChar);
             }
         }
         
-        else if ((i %2 != 0) && (Character.isUpperCase(currChar)))
-        
-        {
-        // Find the index of currChar in the alphabet (call it idx)
+            else if ((i %2 != 0) && (Character.isUpperCase(currChar))) {
+            // Find the index of currChar in the alphabet (call it idx)
             int idx = Alphabet.indexOf(currChar);
-        // If currChar is in the alphabet
-        if (idx != 0)
-            {
-            // Get the idxth character of shiftedAlphabet (newChar)
-            char newChar = ShiftedAlphabet2.charAt(idx);
-            // Replace the ith character of encrypted with newChar
-            encrypted.setCharAt(i,newChar);
+            // If currChar is in the alphabet
+            if (idx != 0) {
+                // Get the idxth character of shiftedAlphabet (newChar)
+                char newChar = ShiftedAlphabet2.charAt(idx);
+                // Replace the ith character of encrypted with newChar
+                encrypted.setCharAt(i,newChar);
             }
         }
                 
@@ -150,36 +141,31 @@ public class CaesarCipher {
 }
 
 
-  public void CaesarCipher()
-   {
-        System.out.println(encrypt("FIRST LEGION ATTACK EAST FLANK!",23));
-    } 
+  public void CaesarCipher() {
+    System.out.println(encrypt("FIRST LEGION ATTACK EAST FLANK!",23));
+
+  } 
     
-     public void encrypt()
-    { 
+  public void encrypt() { 
       System.out.println(encrypt("First Legion",23)+"\n");
       System.out.println(encrypt("Can you imagine life WITHOUT the internet AND computers in your pocket?",15)+"\n");
-    } 
+  } 
     
-    public void testCaesar()
-    {
+  public void testCaesar() {
         int key = 23;
         FileResource fr = new FileResource();
         String message = fr.asString();
         String encrypted = encrypt(message,key);
         System.out.println("Key is"+ key+"\n"+encrypted);
-    }
+  }
     
-    public void encryptTwoKeys()
-    {
+    public void encryptTwoKeys() {
         int key = 14;
         int key2 = 24;
         FileResource fr = new FileResource();
         String message = fr.asString();
         String encrypted = encryptTwoKeys(message,key,key2);
         System.out.println("Key1 is "+ key + " and Key2 is "+ key2 +"\n"+encrypted);
-     
-      
     }
 
 }

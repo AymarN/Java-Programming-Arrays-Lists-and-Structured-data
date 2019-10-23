@@ -9,7 +9,7 @@
  * were used to encrypt it.
  * 
  * @author (Aymar NAHUM) 
- * @version (16.02.2019)
+ * @version (16.02.2019 V2)
  */
 
 import edu.duke.*;
@@ -39,18 +39,11 @@ public class CaesarCipherTwo{
         shiftedAlphabet2 = alphabet.substring(key2)+ alphabet.substring(0,key2);
     }
     
-    /*
-     * Write an encrypt method that has one String parameter named input.
-     * This method returns a String that is the input encrypted using the two
-     * shifted alphabets.
-     */
     
-    public String encrypt(String input){
+    public String encrypt(String input) {
         StringBuilder encrypted = new StringBuilder(input);
         for (int i = 0; i <encrypted.length();i+=2){
-        
         char currChar = encrypted.charAt(i);
-        
         if ((i %2 == 0) && (Character.isLowerCase(currChar)))
         {
         
@@ -75,26 +68,25 @@ public class CaesarCipherTwo{
         
     }
     
-       for (int i = 1; i <encrypted.length();i+=2){
-        char currChar = encrypted.charAt(i);
-        
-        if ((i %2 != 0) && (Character.isLowerCase(currChar)))
-        {
-            int idx = alphabet.indexOf(currChar);
-        if (idx != 0)
+       for (int i = 1; i <encrypted.length();i+=2) {
+            char currChar = encrypted.charAt(i);
+            if ((i %2 != 0) && (Character.isLowerCase(currChar)))
             {
-            char newChar = shiftedAlphabet2.charAt(idx);
-            encrypted.setCharAt(i,newChar);
-            }
+                int idx = alphabet.indexOf(currChar);
+            if (idx != 0)
+                {
+                char newChar = shiftedAlphabet2.charAt(idx);
+                encrypted.setCharAt(i,newChar);
+                }
         }
         
-        else if ((i %2 != 0) && (Character.isUpperCase(currChar)))
-        {
-            int idx = Alphabet.indexOf(currChar);
-        if (idx != 0)
+            else if ((i %2 != 0) && (Character.isUpperCase(currChar)))
             {
-            char newChar = ShiftedAlphabet2.charAt(idx);
-            encrypted.setCharAt(i,newChar);
+                int idx = Alphabet.indexOf(currChar);
+            if (idx != 0)
+            {
+                char newChar = ShiftedAlphabet2.charAt(idx);
+                encrypted.setCharAt(i,newChar);
             }
         }
                 
@@ -103,11 +95,6 @@ public class CaesarCipherTwo{
     return encrypted.toString();   
     }
     
-    /*
-     * Write a decrypt method that has one String parameter named input.
-     * This method returns a String that is the encrypted String decrypted
-     * using the key1 and the key2 associated with this CaesarCipherTwo object.
-     */
     
     public String decrypt(String encrypted)
     {
