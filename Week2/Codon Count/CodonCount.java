@@ -14,18 +14,11 @@ public class CodonCount {
     
     private HashMap<String, Integer> DNA_count;
     
-    public CodonCount(){
+    public CodonCount() {
         DNA_count = new HashMap<String, Integer>();
     }
-
-    /*
-     * This method will build a new map of codons mapped to their 
-     * counts from the string dna with the reading frame with the position 
-     * start( a value of 0,1 or 2).You will call this method several times,
-     * so make sure your map is emptybefore building.
-     */
-    
-    public void buildCodonMap(int start, String dna){
+ 
+    public void buildCodonMap(int start, String dna) {
         
         
        //**************************************************************
@@ -83,15 +76,8 @@ public class CodonCount {
         }
         
     }
-    
-    /*
-     * This method returns a String, the codon in a reading frame that 
-     * has the largest count. If there are several such codons,return
-     * any one of them.This method assumes the HashMap of codons to
-     * counts has already been built.
-     */
-    
-    public String getMostCommonCodon(){
+        
+    public String getMostCommonCodon() {
     
         int largest = 0;
         int current = 0;
@@ -106,14 +92,7 @@ public class CodonCount {
         return largest_count;
     }
     
-    
-    /*Write a void method named printCodonCounts that has two int parameters,
-    *start and end. This method prints all the codons in the HashMap along
-    * with their count if their count is between start and end, inclusive
-    */
-   
-    public void printCodonCounts(int start, int end)
-    {
+    public void printCodonCounts(int start, int end) {
         int current = 0;
         for (String index : DNA_count.keySet()) {
             current = DNA_count.get(index);
@@ -122,32 +101,33 @@ public class CodonCount {
         }
         
     }
-    public void Test(){
+    
+    public void Test() {
        //String dna = "CGTTCAAGTTCAA";
        FileResource DNA = new FileResource("dnaMystery1.txt");
        String dna = DNA.asString();
        int start = 1;
        int end = 5;
         
-        buildCodonMap(0, dna);
-        System.out.println("Reading frame starting with 0 results in "+DNA_count.size()+" unique codons"+"\t");
-        String the_largest_count = getMostCommonCodon();
-        System.out.println("and most common codon is "+the_largest_count+" with count "+DNA_count.get(the_largest_count)+"\t");  
-        System.out.println("Counts of codons between "+start+" and "+end+" inclusive are:"+"\t");
-        printCodonCounts(start, end);
+       buildCodonMap(0, dna);
+       System.out.println("Reading frame starting with 0 results in "+DNA_count.size()+" unique codons"+"\t");
+       String the_largest_count = getMostCommonCodon();
+       System.out.println("and most common codon is "+the_largest_count+" with count "+DNA_count.get(the_largest_count)+"\t");  
+       System.out.println("Counts of codons between "+start+" and "+end+" inclusive are:"+"\t");
+       printCodonCounts(start, end);
         
-        buildCodonMap(1, dna);
-        System.out.println("Reading frame starting with 1 results in "+DNA_count.size()+" unique codons"+"\t");
-        the_largest_count = getMostCommonCodon();
-        System.out.println("and most common codon is "+the_largest_count+" with count "+DNA_count.get(the_largest_count)+"\t");  
-        System.out.println("Counts of codons between "+start+" and "+end+" inclusive are:"+"\t");
-        printCodonCounts(start, end);
+       buildCodonMap(1, dna);
+       System.out.println("Reading frame starting with 1 results in "+DNA_count.size()+" unique codons"+"\t");
+       the_largest_count = getMostCommonCodon();
+       System.out.println("and most common codon is "+the_largest_count+" with count "+DNA_count.get(the_largest_count)+"\t");  
+       System.out.println("Counts of codons between "+start+" and "+end+" inclusive are:"+"\t");
+       printCodonCounts(start, end);
         
-        buildCodonMap(2, dna);
-        System.out.println("Reading frame starting with 2 results in "+DNA_count.size()+" unique codons"+"\t");
-        the_largest_count = getMostCommonCodon();
-        System.out.println("and most common codon is "+the_largest_count+" with count "+DNA_count.get(the_largest_count)+"\t");  
-        System.out.println("Counts of codons between "+start+" and "+end+" inclusive are:"+"\t");
-        printCodonCounts(start, end);
+       buildCodonMap(2, dna);
+       System.out.println("Reading frame starting with 2 results in "+DNA_count.size()+" unique codons"+"\t");
+       the_largest_count = getMostCommonCodon();
+       System.out.println("and most common codon is "+the_largest_count+" with count "+DNA_count.get(the_largest_count)+"\t");  
+       System.out.println("Counts of codons between "+start+" and "+end+" inclusive are:"+"\t");
+       printCodonCounts(start, end);
     }
 }

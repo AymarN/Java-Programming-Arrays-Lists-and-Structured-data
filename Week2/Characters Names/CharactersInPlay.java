@@ -7,7 +7,7 @@
  * macabethSmall.txt
  * 
  * @author (Aymar N) 
- * @version (05.03.2019)
+ * @version (05.03.2019 V2)
  */
 
 import edu.duke.*;
@@ -18,7 +18,7 @@ public class CharactersInPlay {
     private ArrayList<String> character_name;
     private ArrayList<Integer> count;
     
-    public CharactersInPlay(){
+    public CharactersInPlay() {
         character_name = new ArrayList<String>();
         count = new ArrayList<Integer>();
     }
@@ -27,28 +27,26 @@ public class CharactersInPlay {
         
         //person = person.toLowerCase();
         int index = character_name.indexOf(person);
-        if(index == -1)
-        {
+        if (index == -1) {
             character_name.add(person);
             count.add(1);
         }
         
-        else{
+        else {
                 int freq = count.get(index);
                 count.set(index,freq+1); 
         }
         
     }
     
-    public void findAllCharacters(){
+    public void findAllCharacters() {
         character_name.clear();
         count.clear();
         
         FileResource Resource = new FileResource("macbethSmall.txt");
         
-        for(String line: Resource.lines()){
+        for (String line: Resource.lines()){
             
-           
            /* for(int i = 0; i < line.length();i++){
             // CurrentChar per line
             char currChar = line.charAt(i);
@@ -62,7 +60,7 @@ public class CharactersInPlay {
               update(possible_name); 
             }
             */
-           if (line.contains(".")){
+           if (line.contains(".")) {
                
                int idx = line.indexOf(".");
                String possible_name = line.substring(0,idx);
@@ -77,19 +75,19 @@ public class CharactersInPlay {
             
     
    
-    public void tester(){
+    public void tester() {
         findAllCharacters();
         
-        for (int k =0; k < count.size();k++){
+        for (int k =0; k < count.size();k++) {
            
-            if (count.get(k) > 1){
+            if (count.get(k) > 1) {
             
              System.out.println("The main character is: "+ character_name.get(k) +"\t"
              +"The number of speaking parts is: "+ count.get(k));
              
             }
             
-            }
+        }
             
        int num1 = 2;
        int num2 = 3;
@@ -97,19 +95,19 @@ public class CharactersInPlay {
     
     }
     
-    public void charactersWithNumParts(int num1, int num2){
+    public void charactersWithNumParts(int num1, int num2) {
         
-        for (int k =0; k < count.size();k++){
+        for (int k =0; k < count.size();k++) {
            
-            if (count.get(k) >= num1 && count.get(k)<= num2){
+            if (count.get(k) >= num1 && count.get(k)<= num2) {
             
-             System.out.println("The main character between : " + num1 + " and " + num2 
-             + " is " + character_name.get(k) +"\t"
-             +"The number of speaking parts is: "+ count.get(k));
+                System.out.println("The main character between : " + num1 + " and " + num2 
+                + " is " + character_name.get(k) +"\t"
+                +"The number of speaking parts is: "+ count.get(k));
              
             }
             
-            }
+        }
     
     }
     

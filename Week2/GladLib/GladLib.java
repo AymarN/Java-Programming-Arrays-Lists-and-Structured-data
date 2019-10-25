@@ -19,13 +19,13 @@ public class GladLib {
     private static String dataSourceURL = "http://dukelearntoprogram.com/course3/data";
     private static String dataSourceDirectory = "datalong";
     
-    public GladLib(){
+    public GladLib() {
         initializeFromSource(dataSourceDirectory);
         myRandom = new Random();
         wordSeen = new ArrayList<String>();
     }
     
-    public GladLib(String source){
+    public GladLib(String source) {
         initializeFromSource(source);
         // create a random number generator
         myRandom = new Random();
@@ -43,7 +43,7 @@ public class GladLib {
         fruitList = readIt(source+"/fruit.txt");
     }
     
-    private String randomFrom(ArrayList<String> source){
+    private String randomFrom(ArrayList<String> source) {
             //return the next integer random value from
             //the random number generator.
             //source.size() number of elements in ArrayList.
@@ -91,7 +91,7 @@ public class GladLib {
         return "**UNKNOWN**";
     }
     
-    private String processWord(String w){
+    private String processWord(String w) {
             // indexOf first occurence of <
         int first = w.indexOf("<");
         // starting from first, returns the first occurence of >
@@ -157,7 +157,7 @@ public class GladLib {
           
     
     
-    private void printOut(String s, int lineWidth){
+    private void printOut(String s, int lineWidth) {
         int charsWritten = 0;
         for(String w : s.split("\\s+")){
             if (charsWritten + w.length() > lineWidth){
@@ -169,7 +169,7 @@ public class GladLib {
         }
     }
     
-    private String fromTemplate(String source){
+    private String fromTemplate(String source) {
         String story = "";
         if (source.startsWith("http")) {
             URLResource resource = new URLResource(source);
@@ -187,7 +187,7 @@ public class GladLib {
         return story;
     }
     
-    private ArrayList<String> readIt(String source){
+    private ArrayList<String> readIt(String source) {
         ArrayList<String> list = new ArrayList<String>();
         if (source.startsWith("http")) {
             URLResource resource = new URLResource(source);
@@ -204,7 +204,7 @@ public class GladLib {
         return list;
     }
     
-    public void makeStory(){
+    public void makeStory() {
         wordSeen.clear();
         System.out.println("\n");
         //String story = fromTemplate("data/madtemplate.txt");
