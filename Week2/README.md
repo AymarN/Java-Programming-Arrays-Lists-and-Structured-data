@@ -1,6 +1,7 @@
 [Telling a Random Story]
 
 Assignment 1: Most Frequent Word
+[Most frequent Word]
 
 You will write a program to determine the word that occurs the most often in a file. If more than one word occurs as the most often, then return the first such word found. You should make all words lowercase before counting them. Thus, “This” and “this” will both be counted as the lowercase version of “this”. You should not consider punctuation, so “end” and “end,” will be considered different words. Use the WordFrequencies program in the lesson as a starting point.
 
@@ -174,7 +175,7 @@ Note: The convention for text files is to end with a line break, so the above DN
 
 Assignment 2: Words in Files
 
-[Most frequent Word]
+[WordInFiles]
 
 Write a program to determine which words occur in the greatest number of files, and for each word, which files they occur in.
 
