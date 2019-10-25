@@ -3,7 +3,7 @@
  * Write a description of GladLibMap here.
  * 
  * @author (Aymar NAHUM) 
- * @version (12.04.2019)
+ * @version (12.04.2019 V2)
  */
 
 import edu.duke.*;
@@ -28,14 +28,14 @@ public class GladLibMap {
     private static String dataSourceURL = "http://dukelearntoprogram.com/course3/data";
     private static String dataSourceDirectory = "datalong";
     
-    public GladLibMap(){
+    public GladLibMap() {
         initializeFromSource(dataSourceDirectory);
         myRandom = new Random();
         wordSeen = new ArrayList<String>();
         usedCategories = new ArrayList<String>();
     }
     
-    public GladLibMap(String source){
+    public GladLibMap(String source) {
         initializeFromSource(source);
         // create a random number generator
         wordSeen = new ArrayList<String>();
@@ -63,7 +63,7 @@ public class GladLibMap {
     }
     
     
-    private String randomFrom(ArrayList<String> Source){
+    private String randomFrom(ArrayList<String> Source) {
           int index = myRandom.nextInt(Source.size());
           return Source.get(index);
         
@@ -111,13 +111,13 @@ public class GladLibMap {
         return randomFrom(myMap.get(label));
     }
     
-    private void addUsedCategory(String label){
+    private void addUsedCategory(String label) {
        if (usedCategories.indexOf(label) == -1){
            usedCategories.add(label);
         }
     }
     
-    private String processWord(String w){
+    private String processWord(String w) {
         
         // indexOf first occurence of <
         int first = w.indexOf("<");
@@ -145,13 +145,8 @@ public class GladLibMap {
         
         return prefix+sub+suffix;
      } 
-     
-    //Write a new method totalWordsInMap with no parameters. This method returns the
-    //total number of words in all the ArrayLists in the HashMap.After printing the 
-    //GladLib, call this method and print out the total number of words that were 
-    //possible to pick from.
-          
-    private int totalWordsInMap(){
+              
+    private int totalWordsInMap() {
        int sum = 0;      
        for (String category : myMap.keySet()) {
            ArrayList<String> words = myMap.get(category);
@@ -164,13 +159,8 @@ public class GladLibMap {
        
     }
     
-    //Write a new method named totalWordsConsidered with no parameters.This method
-    //returns the total number of words in the ArrayLists of the categories that were 
-    //used for a particular Glalib.If only noun,color and adjective were the categories
-    //used in a GladLib, then only calculate the sum of all the words in those three
-    //categories.
-    
-    private int totalWordsConsidered(){
+  
+    private int totalWordsConsidered() {
         ArrayList<String> content = new ArrayList<String>();
         int sum = 0;
         System.out.println("\nCategories used in this story:");
@@ -185,9 +175,9 @@ public class GladLibMap {
         return sum;
     }
     
-    private void printOut(String s, int lineWidth){
+    private void printOut(String s, int lineWidth) {
         int charsWritten = 0;
-        for(String w : s.split("\\s+")){
+        for(String w : s.split("\\s+")) {
             if (charsWritten + w.length() > lineWidth){
                 System.out.println();
                 charsWritten = 0;
@@ -197,7 +187,7 @@ public class GladLibMap {
         }
     }
     
-    private String fromTemplate(String source){
+    private String fromTemplate(String source) {
         String story = "";
         if (source.startsWith("http")) {
             URLResource resource = new URLResource(source);
@@ -207,7 +197,7 @@ public class GladLibMap {
         }
         else {
             FileResource resource = new FileResource(source);
-            for(String word : resource.words()){
+            for(String word : resource.words()) {
                 story = story + processWord(word) + " ";
             }
         }
@@ -215,24 +205,24 @@ public class GladLibMap {
         return story;
     }
     
-    private ArrayList<String> readIt(String source){
+    private ArrayList<String> readIt(String source) {
         ArrayList<String> list = new ArrayList<String>();
         if (source.startsWith("http")) {
             URLResource resource = new URLResource(source);
-            for(String line : resource.lines()){
+            for(String line : resource.lines()) {
                 list.add(line);
             }
         }
         else {
             FileResource resource = new FileResource(source);
-            for(String line : resource.lines()){
+            for(String line : resource.lines()) {
                 list.add(line);
             }
         }
         return list;
     }
     
-    public void makeStory(){
+    public void makeStory() {
         wordSeen.clear();
         System.out.println("\n");
         //String story = fromTemplate("data/madtemplate.txt");

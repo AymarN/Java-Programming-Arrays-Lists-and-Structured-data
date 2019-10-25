@@ -8,8 +8,8 @@ import org.junit.Test;
 /**
  * Write a description of CharactersInPlayTest here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Aymar NAHUM) 
+ * @version (V2)
  */
 public class CharactersInPlayTest {
     /**
