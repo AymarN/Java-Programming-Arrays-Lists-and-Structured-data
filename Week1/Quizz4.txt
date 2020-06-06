@@ -56,6 +56,7 @@ The following phrase was encrypted with the two-key encryption method we discuss
 
 Hfs cpwewloj loks cd Hoto kyg Cyy.
 
+The original name of Java was Oak.
 
 7. Question 7
 The following phrase was encrypted with the two-key encryption method described in this course. You will need to figure out which keys were used to encrypt it.
