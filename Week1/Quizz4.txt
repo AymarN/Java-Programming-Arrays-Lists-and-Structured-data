@@ -54,9 +54,8 @@ What is the most common word length (ignoring the punctuation of the first and l
 6. Question 6
 The following phrase was encrypted with the two-key encryption method we discussed using the two keys 14 and 24. What is the decrypted message?
 
-Hfs cpwewloj loks cd Hoto kyg Cyy.
-
 The original name of Java was Oak.
+
 
 7. Question 7
 The following phrase was encrypted with the two-key encryption method described in this course. You will need to figure out which keys were used to encrypt it.
