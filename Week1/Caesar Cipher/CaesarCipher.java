@@ -4,9 +4,16 @@
  * Create a new class called CaesarCipher.
  *
  * @author (Aymar N.) 
- * @version (25.02.19)
+ * @version (2023.03.01)
  */
-import edu.duke.*;
+
+//import edu.duke.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.FileNotFoundException;
+
 
 public class CaesarCipher {
     
@@ -184,20 +191,54 @@ public class CaesarCipher {
     
   public void testCaesar() {
         int key = 23;
-        FileResource fr = new FileResource();
-        String message = fr.asString();
-        String encrypted = encrypt(message,key);
-        System.out.println("Key is"+ key+"\n"+encrypted);
+        //FileResource fr = new FileResource();
+        try
+        (BufferedReader inputFile = new BufferedReader(new FileReader("./Data/message1.txt"));)
+        {
+        String c;
+        String message = "";
+        String encrypted = "";
+        while((c = inputFile.readLine())!= null){
+            message += c;
+        }
+        encrypted = encrypt(message,key);
+        System.out.println("Key is: "+ key+"\n"+encrypted);
+        
+        }
+        catch (FileNotFoundException e) {
+            e.printStackTrace();   
+        }
+        catch (IOException e){
+            System.out.println("An exception was found");
+        }
+        
     }
     
    public void encryptTwoKeys() {
         int key = 14;
         int key2 = 24;
-        FileResource fr = new FileResource();
-        String message = fr.asString();
-        String encrypted = encryptTwoKeys(message,key,key2);
-        System.out.println("Key1 is "+ key + " and Key2 is "+ key2 +"\n"+encrypted);
-     
+        //FileResource fr = new FileResource();
+        try
+        (BufferedReader fr = new BufferedReader(new FileReader("./Data/message2.txt"));)
+        {
+        String s = "";
+        String frToString = "";
+        String encrypted = "";
+        
+        while((s = fr.readLine())!= null){
+            frToString += s;
+        }
+        encrypted = encryptTwoKeys(frToString,key,key2);
+        System.out.println("Key1 is: "+ key + " and Key2 is: "+ key2 +"\n"+encrypted);
+   
+        }
+        catch (FileNotFoundException e){
+            System.out.println("The message is missing");
+        }
+        catch (IOException e){
+            e.printStackTrace();
+        }
+        
     }
     
 }
