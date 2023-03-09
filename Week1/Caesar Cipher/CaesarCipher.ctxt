@@ -1,21 +1,17 @@
 #BlueJ class context
 comment0.target=CaesarCipher
-comment0.text=\ \nSpecifically,\ you\ should\ do\ the\ following\:\ \nCreate\ a\ new\ class\ called\ CaesarCipher.\nWrite\ the\ method\ encrypt\ that\ has\ two\ parameters,\ a\ String\ named\ input\ and\ \nan\ int\ named\ key.\ This\ method\ returns\ a\ String\ that\ has\ been\ encrypted\ using\nthe\ Caesar\ Cipher\ algorithm\ explained\ in\ the\ videos.\ Assume\ that\ all\ the\nalphabetic\ characters\ are\ uppercase\ letters.\ For\ example,\ the\ call\ \nencrypt(\u201CFIRST\ LEGION\ ATTACK\ EAST\ FLANK\!\u201D,\ 23)\nshould\ return\ the\ string\n\u201CCFOPQ\ IBDFLK\ XQQXZH\ BXPQ\ CIXKH\!\u201D
 comment1.params=input\ key
 comment1.target=java.lang.String\ encrypt(java.lang.String,\ int)
 comment2.params=input\ key
 comment2.target=java.lang.String\ encrypt_changed(java.lang.String,\ int)
-comment2.text=\ Modify\ the\ encrypt\ method\ to\ be\ able\ to\ handle\ both\ uppercase\ and\ \n\ \ \ lowercase\ letters.\ For\ example,\ encrypt(\u201CFirst\ Legion\u201D,\ 23)\ should\n\ \ \ return\ \u201CCfopq\ Ibdflk\u201D,\ and\ encrypt(\u201CFirst\ Legion\u201D,\ 17)\ should\ return\ \n\u201CWzijk\ Cvxzfe\u201D.\ Be\ sure\ to\ test\ the\ encrypt\ method.
 comment3.params=input\ key1\ key2
 comment3.target=java.lang.String\ encryptTwoKeys(java.lang.String,\ int,\ int)
-comment3.text=\ Write\ the\ method\ encryptTwoKeys\ that\ has\ three\ parameters,\ a\ String\ named\ \n\ \ \ input,\ and\ two\ integers\ named\ key1\ and\ key2.\ This\ method\ returns\ a\ String\n\ \ \ that\ has\ been\ encrypted\ using\ the\ following\ algorithm.\ Parameter\ key1\ is\ \n\ \ \ used\ to\ encrypt\ every\ other\ character\ with\ the\ Caesar\ Cipher\ algorithm,\ \n\ \ \ starting\ with\ the\ first\ character,\ and\ key2\ is\ used\ to\ encrypt\ every\ other\n\ \ \ character,\ starting\ with\ the\ second\ character.\ For\ example,\ \n\ \ \ the\ call\ encryptTwoKeys(\u201CFirst\ Legion\u201D,\ 23,\ 17)\ should\ return\ \n\ \ \ \u201CCzojq\ Ivdzle\u201D.\ Note\ the\ \u2018F\u2019\ is\ encrypted\ with\ key\ 23,\ the\ first\ \u2018i\u2019\ \n\ \ \ with\ 17,\ the\ \u2018r\u2019\ with\ 23,\ and\ the\ \u2018s\u2019\ with\ 17,\ etc.\ \nBe\ sure\ to\ test\ this\ method.
 comment4.params=
 comment4.target=void\ CaesarCipher()
 comment5.params=
 comment5.target=void\ encrypt_changed()
 comment6.params=
 comment6.target=void\ testCaesar()
-comment6.text=\ Write\ the\ void\ method\ testCaesar\ that\ has\ no\ parameters.\ This\ method\ \n\ \ \ \ should\ read\ a\ file\ and\ encrypt\ the\ complete\ file\ using\ the\ Caesar\ Cipher\n\ \ \ \ algorithm,\ printing\ the\ encrypted\ message.\ You\ may\ want\ to\ include\ the\ \n\ \ \ \ lines\:\ \n
 comment7.params=
 comment7.target=void\ encryptTwoKeys()
 numComments=8
