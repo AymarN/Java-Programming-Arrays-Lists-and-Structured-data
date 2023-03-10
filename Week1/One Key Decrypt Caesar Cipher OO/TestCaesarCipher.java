@@ -1,9 +1,8 @@
 
 /**
  * Write a description of TestCaesarCipher here.
- * 
  * @author (Aymar N.) 
- * @version (03.02.2019)
+ * @version (v.1.0.0)
  */
 import edu.duke.*;
 
