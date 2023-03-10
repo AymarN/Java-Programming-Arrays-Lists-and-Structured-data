@@ -2,15 +2,18 @@
 /**
  * Write a description of TestCaesarCipher here.
  * @author (Aymar N.) 
- * @version (v.1.0.0)
+ * @version (v.2.0.0)
  */
-import edu.duke.*;
+
+import java.util.Scanner;
 
 public class TestCaesarCipher {
         
 public void simpleTests() {
-      FileResource fr = new FileResource();
-      String message = fr.asString();
+      //FileResource fr = new FileResource();
+      
+      java.util.Scanner fr = new Scanner(System.in);
+      String message =  fr.nextLine();
       CaesarCipher cc = new CaesarCipher(18);
       String encrypted = cc.encrypt(message);
       System.out.println("The encryption result is "+ encrypted);

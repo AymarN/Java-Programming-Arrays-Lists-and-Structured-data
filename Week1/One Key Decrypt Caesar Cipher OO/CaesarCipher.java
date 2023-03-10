@@ -1,12 +1,11 @@
 
 /**
  * Write a description of CaesarCipher here.
- * 
  * @author (Aymar N.) 
- * @version (03.02.2019 v.1.0.0)
+ * @version (v.2.0.0)
  */
 
-import edu.duke.*;
+import java.util.*;
 
 public class CaesarCipher{
     
