@@ -9,11 +9,15 @@
  * keys method from the program you wrote in the last course.
  * 
  * @author (Aymar N.) 
- * @version (13.03.2019 V2)
+ * @version (2023.03.01 V2)
  */
 
-import edu.duke.*;
-import java.io.*;
+
+import java.io.IOException;
+import java.io.FileNotFoundException;
+import java.io.BufferedReader;
+import java.io.FileReader;
+
 import java.lang.*;
 
 public class CaesarBreaker {
@@ -46,6 +50,17 @@ public class CaesarBreaker {
         }
         //System.out.println("The Array maxIndex is :"+ indexOfMax);
         return indexOfMax; 
+    } 
+    
+    public int getKey(String s) {
+       int[] freqs = CountLetters(s);
+       int maxDex = maxIndex(freqs);
+       int dKey = maxDex - 4;
+       if (maxDex < 4) {
+           dKey = 26 - (4 -maxDex);
+       }
+       return dKey;
+        
     }
     
     public String decrypt(String encrypted, int Key) {
@@ -93,53 +108,90 @@ public class CaesarBreaker {
         return result;
     }
     
-    public int getKey(String s) {
-       int[] freqs = CountLetters(s);
-       int maxDex = maxIndex(freqs);
-       int dKey = maxDex - 4;
-       if (maxDex < 4) {
-           dKey = 26 - (4 -maxDex);
-       }
-       return dKey;
-        
-    }
+   
     
     public void halfOfStringTest() {
         
-       FileResource resource = new FileResource("data/wordsLotsOfEs.txt");
-       String message = resource.asString();
-       //System.out.println(message);
-       System.out.println("half of String starts with 0"+ halfOfString(message, 0));
-       System.out.println("half of String starts with 1"+ halfOfString(message, 1));
        
-       CaesarCipher cc = new CaesarCipher();
-       String encrypted = cc.encrypt(halfOfString(message, 0), 20);
-       String decrypted = decrypt(encrypted,26 - 20);
-       System.out.println(encrypted);
-       System.out.println(decrypted);
+       try
+       (BufferedReader resource = new BufferedReader(new FileReader("./data/wordsLotsOfEs.txt"));)
+       {
+           String s = "";
+           String message = "";
+           String encrypted = "";
+           String decrypted = "";
+           while((s = resource.readLine())!= null){
+               message += s;
+          }
+           System.out.println("half of String starts with 0"+ halfOfString(message, 0));
+           System.out.println("half of String starts with 1"+ halfOfString(message, 1));
+           CaesarCipher cc = new CaesarCipher();
+           encrypted = cc.encrypt(halfOfString(message, 0), 20);
+           decrypted = decrypt(encrypted,26 - 20);
+           System.out.println(encrypted);
+           System.out.println(decrypted);
+       }
+       catch (FileNotFoundException e){
+           System.out.println("The data was not found");
+       }
+       catch (IOException e){
+           e.getMessage();
+       }
+    
     
     }
     
   
     public void testDecrypt() {
-        int key = 23;
-        FileResource fr = new FileResource("wordsLotsOfEs.txt");
-        String message = fr.asString();
-        CaesarCipher cc = new CaesarCipher();
-        String decrypted = cc.encrypt(message, 26 - key);
-        System.out.println("Key is"+ key+"\n"+decrypted);
+       
+        try
+        (BufferedReader fr = new BufferedReader(new FileReader("./data/wordsLotsOfEs.txt"));)
+        {
+             int key = 23;
+             String c = "";
+             String message = "";
+             String decrypted = "";
+             while((c = fr.readLine())!= null){
+                 message += c;
+            }
+            
+            CaesarCipher cc = new CaesarCipher();
+            decrypted = cc.encrypt(message, 26 - key);
+            System.out.println("Key is: "+ key+"\n"+decrypted);
+        }
+        catch(FileNotFoundException e ){
+            e.printStackTrace();
+        }
+        catch(IOException e){
+            e.getMessage();
+        }
     
     }
     
     public void decryptTwoKeysTest() {
         
-       FileResource resource = new FileResource("data/Question 8");
-       String message = resource.asString();
+       try
+       (BufferedReader aResource = new BufferedReader(new FileReader("./data/Question 8"));)
+       {
+           String s = "";
+           String message = "";
+           //String message = "Akag tjw Xibhr awoa aoee xakex znxag xwko";
+           String decrypted_message = "";
+           while((s = aResource.readLine())!= null){
+                message += s;
+           }
+           
+           decrypted_message = decryptTwoKeys(message); 
+           System.out.println(message);
+           System.out.println(decrypted_message);
+       }
+       catch(FileNotFoundException e){
+           System.out.println("The data  is missing");
+       }
+       catch(IOException e){
+           e.getMessage();
+       }
        
-       //String message = "Akag tjw Xibhr awoa aoee xakex znxag xwko";
-       String decrypted_message = decryptTwoKeys(message); 
-       System.out.println(message);
-       System.out.println(decrypted_message);
     }
 
 }

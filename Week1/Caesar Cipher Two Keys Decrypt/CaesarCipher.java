@@ -3,10 +3,15 @@
  * A description of CaesarCipher here.
  * Caesar Cipher in the same folder as Caesar Breaker.
  * @author (Aymar N.) 
- * @version (Version 1)
+ * @version (2023.03.01 V2)
  */
 
-import edu.duke.*;
+
+import java.io.IOException;
+import java.io.FileNotFoundException;
+import java.io.BufferedReader;
+import java.io.FileReader;
+
 
 public class CaesarCipher {
     
@@ -152,20 +157,56 @@ public class CaesarCipher {
   } 
     
   public void testCaesar() {
-        int key = 23;
-        FileResource fr = new FileResource();
-        String message = fr.asString();
-        String encrypted = encrypt(message,key);
-        System.out.println("Key is"+ key+"\n"+encrypted);
+        
+        //FileResource fr = new FileResource();
+        try(BufferedReader inputFile = new BufferedReader(new FileReader("./data/Question 8"));)
+        {
+            int key = 23;
+            String s = "";
+            String message = "";
+            String encrypted = "";
+            while((s = inputFile.readLine())!= null){
+                message += s;
+            }
+            
+            encrypted = encrypt(message,key);
+            System.out.println("Key is: "+ key+"\n"+encrypted);
+            
+        }
+        catch(FileNotFoundException e){
+            System.out.println("The data was not found");
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
+       
   }
     
     public void encryptTwoKeys() {
-        int key = 14;
-        int key2 = 24;
-        FileResource fr = new FileResource();
-        String message = fr.asString();
-        String encrypted = encryptTwoKeys(message,key,key2);
-        System.out.println("Key1 is "+ key + " and Key2 is "+ key2 +"\n"+encrypted);
+       
+        
+        try
+        (BufferedReader fr = new BufferedReader(new FileReader("./data/Question 8"));)
+        {
+             int key = 14;
+             int key2 = 24;
+             String message = "";
+             String c = "";
+             String encrypted = "";
+             while((c = fr.readLine())!= null)
+             {
+                 message += c;
+             }
+             encrypted = encryptTwoKeys(message,key,key2);
+             System.out.println("Key1 is "+ key + " and Key2 is "+ key2 +"\n"+encrypted);
+        }catch (FileNotFoundException e){
+            e.getMessage();
+        }
+        catch (IOException e){
+            e.printStackTrace();
+        }
+        
+        
     }
 
 }
