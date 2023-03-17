@@ -7,12 +7,9 @@
  * test examples that use CaesarCipherTwo class including a method that will
  * automatically decrypt an encrypted file by determining the two keys that 
  * were used to encrypt it.
- * 
- * @author (Aymar NAHUM) 
- * @version (16.02.2019 V2)
+ * @author (AymarN) 
+ * @version (V2 03.2023)
  */
-
-import edu.duke.*;
 
 public class CaesarCipherTwo{
     

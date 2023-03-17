@@ -1,26 +1,29 @@
 
 /**
  * Write a description of TestCaesarCipherTwo here.
- * 
  * Create the TestCaeasarCipherTwo class with the following parts
  * Include halfOfString, CountLetters and maxIndex
- * 
- * @author (Aymar NAHUM) 
- * @version (16.02.2019 V2)
+ * @author (AymarN) 
+ * @version (V2 03.2023)
  */
-import edu.duke.*;
+
+import java.util.Scanner;
+
 
 public class TestCaesarCipherTwo {
     
     
     public void simpleTests() {
-    FileResource fr = new FileResource();
-    String message = fr.asString();
-    /*CaesarCipherTwo cc2 = new CaesarCipherTwo(21,8);
+    //FileResource fr = new FileResource();
+    
+    Scanner fr = new Scanner(System.in);
+    String message = fr.nextLine();
+    
+    CaesarCipherTwo cc2 = new CaesarCipherTwo(21,8);
     String encrypted = cc2.encrypt(message);
     System.out.println("The encryption result is "+ encrypted);
     String decrypted = cc2.decrypt(encrypted);
-    System.out.println("The decryption outcome is "+ decrypted);*/
+    System.out.println("The decryption outcome is "+ decrypted);
     String breakCaesarCipher = breakCaesarCipher(message);
     System.out.println("The decryption is "+ breakCaesarCipher);
     }
