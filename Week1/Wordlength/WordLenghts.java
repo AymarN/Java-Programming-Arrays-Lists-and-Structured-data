@@ -2,8 +2,8 @@
 /**
  * Figure out the most common word length of words from a file.
  * 
- * @author (Aymar N.) 
- * @version (28.02.19 V2)
+ * @author (AymarN) 
+ * @version (V2 03.2023)
  */
 import java.lang.*;
 import edu.duke.*;

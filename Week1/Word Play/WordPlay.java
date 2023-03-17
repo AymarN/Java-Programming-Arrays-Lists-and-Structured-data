@@ -2,8 +2,8 @@
 /**
  * Write a description of WordPlay here.
  * 
- * @author (Aymar NAHUM) 
- * @version (V2 24.10.2019)
+ * @author (AymarN) 
+ * @version (V2 03.2023)
  */
 public class WordPlay {
 
