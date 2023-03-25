@@ -7,18 +7,25 @@ import org.junit.Test;
 
 /**
  * Write a description of CharactersInPlayTest here.
- * 
  * @author (Aymar NAHUM) 
- * @version (V2)
+ * @version (V2  04.01.2023)
  */
 public class CharactersInPlayTest {
     /**
      * Sets up the test fixture.
-     *
      * Called before every test case method.
      */
+    
     @Before
     public void setUp() {
+        
+    }
+    
+    @Test
+    public void mainTest(){
+         CharactersInPlay  charactersInPlay = new CharactersInPlay();
+         charactersInPlay.findAllCharacters();
+        
     }
 
     /**
@@ -29,4 +36,6 @@ public class CharactersInPlayTest {
     @After
     public void tearDown() {
     }
+
+  
 }
