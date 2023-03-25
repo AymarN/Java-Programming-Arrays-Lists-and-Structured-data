@@ -5,12 +5,16 @@
  * Shakespeare's plays that have the most speaking parts.
  * Consider the play "The tragedy of Macabeth" in the file
  * macabethSmall.txt
- * 
  * @author (Aymar N) 
- * @version (05.03.2019 V2)
+ * @version (04.01.2023 V2)
  */
 
-import edu.duke.*;
+//import edu.duke.*;
+import java.io.FileReader;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.FileNotFoundException;
+
 import java.util.ArrayList;
 
 public class CharactersInPlay {
@@ -43,9 +47,15 @@ public class CharactersInPlay {
         character_name.clear();
         count.clear();
         
-        FileResource Resource = new FileResource("macbethSmall.txt");
-        
-        for (String line: Resource.lines()){
+        //FileResource Resource = new FileResource("macbethSmall.txt");
+        try(BufferedReader Resource = new BufferedReader(new FileReader("macbethSmall.txt"));)
+        {
+            String s = "";
+            //String message
+            
+            while( (s = Resource.readLine())!= null){
+            
+            
             
            /* for(int i = 0; i < line.length();i++){
             // CurrentChar per line
@@ -60,16 +70,25 @@ public class CharactersInPlay {
               update(possible_name); 
             }
             */
-           if (line.contains(".")) {
+           if (s.contains(".")) {
                
-               int idx = line.indexOf(".");
-               String possible_name = line.substring(0,idx);
+               int idx = s.indexOf(".");
+               String possible_name = s.substring(0,idx);
                update(possible_name);
             
             }
             
-            
-           }
+        }
+        
+        }
+        catch(FileNotFoundException e){
+             System.out.println(e.getMessage());
+        }
+        catch (IOException e){
+            System.out.println("An error occurred");
+        }
+       
+    
                                               
         }
             

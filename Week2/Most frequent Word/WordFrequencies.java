@@ -6,7 +6,7 @@
  *  the first such word found. You will make all words lowercase 
  *  before counting them. 
  * @author (Aymar N) 
- * @version (01.03.2019)
+ * @version (04.01.2023)
  */
 import edu.duke.*;
 import java.util.ArrayList;
