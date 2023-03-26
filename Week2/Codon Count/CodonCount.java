@@ -4,10 +4,14 @@
  * Find out how many times each codon occurs in a stand of DNA based on 
  * reading frames.
  * @author (Aymar N) 
- * @version (07.03.2019)
+ * @version (04.01.2023 V2)
  */
 
-import edu.duke.*;
+//import edu.duke.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.FileNotFoundException;
 import java.util.HashMap;
 
 public class CodonCount {
@@ -104,8 +108,25 @@ public class CodonCount {
     
     public void Test() {
        //String dna = "CGTTCAAGTTCAA";
-       FileResource DNA = new FileResource("dnaMystery1.txt");
-       String dna = DNA.asString();
+       String s = "";
+       String dna = "";
+       try(BufferedReader DNA = new BufferedReader(new FileReader("dnaMystery1.txt"));)
+       {
+           //FileResource DNA = new FileResource("dnaMystery1.txt");
+           while((s = DNA.readLine())!= null){
+               dna += s;
+           }
+           //String dna = DNA.asString();
+
+       }
+       catch(FileNotFoundException e){
+           e.printStackTrace();
+       }
+       catch(IOException e){
+           e.printStackTrace();
+       }
+      
+       
        int start = 1;
        int end = 5;
         
