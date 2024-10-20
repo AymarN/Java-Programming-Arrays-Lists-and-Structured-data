@@ -1,14 +1,15 @@
 
 /**
- * Write a description of class testUniqueWordMap here.
+ * Write a description of class MostFrequentWordHashMapTest.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Aymar S. NAHUM)
+ * @version (10/20/2024)
  */
 import java.util.ArrayList;
 
-public class MostFrequentWordHashMapTest
-{
+public class MostFrequentWordHashMapTest{
+
+
     // instance variables - replace the example below with your own
     public static ArrayList<String> in = new ArrayList<String>();
 
@@ -46,6 +47,7 @@ public class MostFrequentWordHashMapTest
         
         MostFrequentWordHashMap MostFrequentWordHashMap = new MostFrequentWordHashMap();
         //MostFrequentWordHashMap.mapUniqueMethod(in);
+        MostFrequentWordHashMap.clearMap(in);
         MostFrequentWordHashMap.findMaxMethod(MostFrequentWordHashMap.mapUniqueMethod(in));
     }
 }
