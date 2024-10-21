@@ -18,6 +18,8 @@ Run the method dayWithMostIPVisits with a HashMap has been created from the meth
 
 What day is returned?
 
+Mar 24
+
 4. Question 4
 Run the method iPsWithMostVisitsOnDay with two parameters—one, a HashMap that has been created from the method iPsForDays on the file weblog1_log and two, the day “Mar 17”.
 
