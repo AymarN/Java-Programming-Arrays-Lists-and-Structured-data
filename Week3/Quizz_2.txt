@@ -25,12 +25,12 @@ Of all the web logs printed, what are the unique status codes printed?
 Only 404
 
 3. Question 3
-Run the method uniqueIPVisitsOnDay(“Mar 17”) on the file weblog1_log.
+Run the method uniqueIPVisitsOnDay(“Mar 24”) on the file weblog1_log.
 What size is the ArrayList that is returned?
 16
 
 4. Question 4
-Run the method countUniqueIPsInRange(200,299) on the file weblog1_log.
+Run the method countUniqueIPsInRange(300,399) on the file weblog1_log.
 
 What number is returned?
 65
