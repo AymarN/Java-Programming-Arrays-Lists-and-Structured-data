@@ -19,9 +19,11 @@
                                                                                        |and decryption in OOP                         |
                                           
                                           
-    |Week 2                               |Characters names                            |                                              |
-                                          |Codon count  
-                                          |Most frequent word  
+    |Week 2                               |Characters names                            |Find characters in macbethSmall.txt           |
+                                          |Codon count                                 |How many times each codon occurs
+                                                                                       |in a DNA Sequence
+                                                                                       
+                                          |Most frequent word                          |Count the frequency of words in a file
                                           |Word in files 
                                           |GladLib
                                           |GladLibMap 
