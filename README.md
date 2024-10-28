@@ -24,9 +24,10 @@
                                                                                        |in a DNA Sequence
                                                                                        
                                           |Most frequent word                          |Count the frequency of words in a file
-                                          |Word in files 
-                                          |GladLib
-                                          |GladLibMap 
+                                          |Word in files                               |Find the maximum occurrence of a word in 
+                                                                                       |a group of file
+                                          |GladLib                                     |GladLib 
+                                          |GladLibMap                                  |GladLib with HashMap
 
 
     |Week 3                               |Find unique IP addresses                    |                                              | 
