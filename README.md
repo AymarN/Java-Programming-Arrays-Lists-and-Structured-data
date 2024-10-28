@@ -30,11 +30,16 @@
                                           |GladLibMap                                  |GladLib with HashMap
 
 
-    |Week 3                               |Find unique IP addresses                    |                                              | 
-                                          |WebLogProgram       
-                                          |Website Visits
-
-                                          
+    |Week 3                               |WebLogProgram                               |Template of the week                          |
+    
+                                          |Find unique IP addresses                    |From a weblog generate a log entry            |
+                                                                                       |that displays a unique IP address at a 
+                                                                                       |given day
+                                                
+                                          |Website Visits                              |From a Weblog generate a log entry            |
+                                                                                       |that displays a unique IP address at a
+                                                                                       |given day. Several methods to sort out
+                                                                                       |weblog problems.
                                           
     |Week 4                               |Viginere Program                            |                                              |
                                           |Viginere Program multiple languages 
