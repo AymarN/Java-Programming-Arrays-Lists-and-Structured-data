@@ -38,13 +38,15 @@
                                                 
                                           |Website Visits                              |From a Weblog generate a log entry            |
                                                                                        |that displays a unique IP address at a
-                                                                                       |given day. Several methods to sort out
+                                                                                       |given day. Multiple methods to sort out
                                                                                        |weblog problems.
                                           
-    |Week 4                               |Viginere Program                            |                                              |
-                                          |Viginere Program multiple languages 
-                                          |Viginere Program Unknown key length
-                                                                                 
+    |Week 4                               |Viginere Program                            |Viginere Cipher                               |
+                                          |Viginere Program multiple languages         |Viginiere Cipher with several languages
+                                                                                       |"Danish", "Dutch", "English", "German"
+                                                                                       |"Italian", "Portuguese", "Spanish", "French"
+                                          |Viginere Program Unknown key length         |Decrypt the Viginere without providing the    |
+                                                                                       |key length
                                                                                                                                 
          
 
