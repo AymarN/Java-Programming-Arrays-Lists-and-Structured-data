@@ -54,6 +54,7 @@
 I shall confess that it is a very interesting course on Java data structures.
 Several techniques are provided to sort out problems in Java through pseudo code.
 Thereafter, it is easier to move to advanced Java techniques.
+Thank you very much.
 
 
 
