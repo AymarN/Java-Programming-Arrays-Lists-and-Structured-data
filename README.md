@@ -52,8 +52,8 @@
 
 #### Aymar Sedami's comments
 I shall confess that it is a very interesting course on Java data structures.
-Several techniques are provided to sort out problems in Java through pseudo code.<br/>
-Thereafter, it is easier to move to advanced Java techniques.
+Several techniques are provided to sort out problems in Java through pseudo code.
+Thereafter, it is easier to move to advanced Java techniques.<br/>
 Thank you very much.
 
 
